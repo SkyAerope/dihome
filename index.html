@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<title>^薄荷布丁^</title>
+<meta name="keywords" content="薄荷布丁">
+<meta name="description" content="薄荷布丁">
+<link rel="shortcut icon" type="image/x-icon" href="https://box.sllzy.top/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/main.css">
+<style>
+             .mom {
+                 display: none;
+             }
+
+             @media only screen and (max-width:450px) {
+                 .mom {
+                     display: block;
+                 }
+
+                 .cn {
+                     color: #f00;
+                     font-weight: bold;
+                 }
+         </style>
+<script async src='./js/invisible.js'></script></head>
+<body class="is-loading">
+
+<div id="wrapper">
+
+<section id="main">
+<header>
+<span class="avatar"><img src="https://q2.qlogo.cn/headimg_dl?dst_uin=2894468310&spec=100" alt></span>
+<a>
+<h1>&ensp;^薄荷布丁^</h1>
+</a>
+<p>Freelance website developer with cat ears.</p>
+
+<form name="form1">
+<div align="center" style="background-color:#96f2d7;">
+<p onclick="copyToClipboard('你好脏呀⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄怎么乱摸人家啦~')">摸摸</p>
+ </div>
+<div class="cn">咪呜~</div>
+</form>
+
+</header>
+<footer>
+<ul class="icons">
+<li><a href="https://skae.top" title="">Blog</a></li>
+<li><a href="https://example.com" title="">暂未开放</a></li>
+<li><a href="https://example.com" title="">暂未开放</a></li>
+<li><a href="yl.html" title="">友情链接</a></li>
+</ul>
+</footer>
+</section>
+
+<footer id="footer">
+<ul class="copyright">
+<li>©2019-现在 <a href="https://didl.top">^薄荷布丁^</a></li>
+</ul>
+</footer>
+</div>
+<script>
+             if ('addEventListener' in window) {
+                 window.addEventListener('load', function() {
+                     document.body.className = document.body.className.replace(/\bis-loading\b/, '');
+                 });
+                 document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+             }
+         </script>
+<script src="js/jquery.min.js"></script>
+<script> 
+        function copyToClipboard(s) {
+            if (window.clipboardData) {
+                window.clipboardData.setData('text', s);
+            } else {
+                (function(s) {
+                    document.oncopy = function(e) {
+                        e.clipboardData.setData('text', s);
+                        e.preventDefault();
+                        document.oncopy = null;
+                    }
+                })(s);
+                document.execCommand('Copy');
+            }
+        }
+    </script>
+<script src="js/su.js"></script>
+<script src="js/Mouse.js"></script><!-- 点击烟花特效 -->
+</body>
+</html>
+</doctype>
