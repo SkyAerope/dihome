@@ -1,10 +1,32 @@
-﻿.mdui-table td, .mdui-table th{padding: 6px;}
-.progress{width: 10%;min-width: 75px;}
-.progress-text{font-size: 16px;font-weight: 800;position: relative;top: 4px;left: 6px;}
-a{text-decoration:none;color:#333;}.mdui-theme-layout-dark a{color:#fff;}
+﻿.mdui-table td,
+.mdui-table th {
+    padding: 6px;
+}
+
+.progress {
+    width: 10%;
+    min-width: 75px;
+}
+
+.progress-text {
+    font-size: 16px;
+    font-weight: 800;
+    position: relative;
+    top: 4px;
+    left: 6px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.mdui-theme-layout-dark a {
+    color: #fff;
+}
 
 /* 屏幕适配 */
-@media (min-width: 1024px){
+/*@media (min-width: 1024px){
 .mdui-container {
     width: 92%;
 }}
@@ -12,10 +34,11 @@ a{text-decoration:none;color:#333;}.mdui-theme-layout-dark a{color:#fff;}
 .mdui-container {
     width: 94%;
 }
-.mdui-container {
+ .mdui-container {
     width: 96%;
     max-width: 1600px;
-}}
+}}*/
+
 /* 不需要猫咪背景图片了~ */
 /* 背景图片 */
 /* body {
@@ -71,17 +94,36 @@ top: 1% !important;
     height: auto;
 }
 
-/* 渐变色 */
+/* 渐变色卡片 */
 .card1 {
     background: linear-gradient(to right bottom, #b2dfdb, #b3e5fc, #e1bee7);
     box-shadow: 
     /*-9px -9px 5px #b2dfdbb7,   绿色阴影 */
-    2px 9px 15px #e1bee7cc,  /* 紫色阴影 */
-    -2px 9px 15px #b3e5fc79;   /*蓝色阴影 */
+    2px 9px 16px #e1bee7cc,  /* 紫色阴影 */
+    -2px 9px 16px #b3e5fc88;   /*蓝色阴影 */
     transition: box-shadow 0.3s ease;  /* 添加过渡效果 */
+    margin: 16px;
 }
 .card1:hover {
     box-shadow: 
-    2px 9px 20px #ce93d8cc,  /* 紫色阴影 */
-    -2px 9px 20px #4fc3f779;   /*蓝色阴影 */
+    2px 9px 32px #e1bee7cc,  /* 紫色阴影 */
+    -2px 9px 32px #4fc3f779;   /*蓝色阴影 */
+}
+
+.card2 {
+    background: linear-gradient(to right bottom, #ff9a9e, #fad0c4, #fad0c4);
+    box-shadow: 
+    2px 9px 16px #fad0c455,
+    -2px 9px 16px #ff9a9e55;
+    transition: box-shadow 0.3s ease;  /* 添加过渡效果 */
+    margin: 16px;
+}
+.card2:hover {
+    box-shadow: 
+    2px 9px 32px #fad0c477,
+    -2px 9px 32px #ff9a9e77;
+}
+.card2s {
+    padding-top: 8px;
+    margin: 4px;
 }
