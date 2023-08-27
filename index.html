@@ -62,11 +62,13 @@
             <div class="mdui-card-media">
                 <div class="mdui-card-primary">
                     <div class="mdui-card-primary-title">开源项目</div>
-                    <div class="mdui-card-primary-subtitle">乱写的（）</div>
+                    <div class="mdui-card-primary-subtitle">乱写的（）| 碰一下就会展开</div>
                 </div>
             </div>
             <div class="mdui-card-content">
                 <div class="mdui-row-sm-3 mdui-row-xs-1">
+                    <!--桌面端横排卡片-->
+                    <div class="mdui-hidden-sm-down">
                         <!--卡片1-->
                         <div class="mdui-card mdui-col card2s">
                             <div class="mdui-card-media">
@@ -97,6 +99,40 @@
                                 <a href="https://totp.skae.top/" class="mdui-btn mdui-ripple mdui-ripple-white mdui-btn-block">访问</a>
                             </div>
                         </div>
+                    </div>
+                    <!--移动端竖排卡片-->
+                    <div class="mdui-hidden-md-up">
+                        <!--卡片1-->
+                        <div class="mdui-card mdui-col card2sm">
+                            <div class="mdui-card-media">
+                                <img src="img/random-word.png"/>
+                                <div class="mdui-card-media-covered mdui-card-media-covered-top">
+                                    <div class="mdui-card-primary">
+                                        <div class="mdui-card-primary-title">随机文字</div>
+                                        <div class="mdui-card-primary-subtitle">前端+API，随机返回文本文档中一行</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdui-card-actions">
+                                <a href="https://random-word-khaki.vercel.app/" class="mdui-btn mdui-ripple mdui-ripple-white mdui-btn-block">访问</a>
+                            </div>
+                        </div>
+                        <!--卡片2-->
+                        <div class="mdui-card mdui-col card2sm">
+                            <div class="mdui-card-media">
+                                <img src="img/totp.png"/>
+                                <div class="mdui-card-media-covered mdui-card-media-covered-top">
+                                    <div class="mdui-card-primary">
+                                        <div class="mdui-card-primary-title">TOTP生成器</div>
+                                        <div class="mdui-card-primary-subtitle">静态网页，生成TOTP</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdui-card-actions">
+                                <a href="https://totp.skae.top/" class="mdui-btn mdui-ripple mdui-ripple-white mdui-btn-block">访问</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

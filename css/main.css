@@ -123,7 +123,32 @@ top: 1% !important;
     2px 9px 32px #fad0c477,
     -2px 9px 32px #ff9a9e77;
 }
+/* 项目卡片中的小卡片 */
 .card2s {
     padding-top: 8px;
     margin: 4px;
+    transition: transform 0.3s ease;  /* 添加过渡效果 */
+    position: relative;  /* 为了使用 left 属性 */
+}
+.card2s:hover {
+    transform: translateY(-20px);
+}
+.card2s:not(:first-child) {
+    margin-left: -96px;
+}
+.card2s:hover ~ .card2s {
+    transform: translateX(96px);
+}
+/* 移动端 */
+.card2sm {
+    padding-top: 8px;
+    margin: 4px;
+    transition: transform 0.3s ease;  /* 添加过渡效果 */
+    position: relative;  /* 为了使用 left 属性 */
+}
+.card2sm:not(:first-child) {
+    margin-top: -256px;
+}
+.card2sm:hover ~ .card2sm {
+    transform: translateY(256px);
 }
